@@ -1,0 +1,34 @@
+{
+  "name": "rocketty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "watch": "babel src --out-dir lib --watch --watch-poll --extensions '.ts,.tsx'",
+    "build": "babel src --out-dir lib --extensions '.ts,.tsx'",
+    "dev": "node --inspect lib/index.js",
+    "start": "node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-regenerator": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/blessed": "^0.1.12",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "@rocket.chat/sdk": "^0.2.9-2",
+    "blessed": "^0.1.81",
+    "dotenv": "^8.2.0"
+  }
+}
